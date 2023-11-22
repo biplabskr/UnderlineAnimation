@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+a{
+    display: inline-block;
+    padding: 25px 40px;
+    /* border: 2px solid rebeccapurple; */
+    position: relative;
+    cursor: pointer;
+
+}
+
+a:hover{
+
+    .span1{
+
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        height:2px;
+        background-color: aqua;
+        animation: slide1 2s infinite alternate;
+    }
+
+    .span2{
+
+        position: absolute;
+        bottom: 0%;
+        right: 50%;
+        height:2px;
+        background-color:aqua;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: slide2 2s infinite alternate;
+    }
+}
+
+
+
+
+
+
+
+
+/* .span1{
+
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    height:2px;
+    background-color: aqua;
+    animation: slide1 2s infinite;
+} */
+
+@keyframes slide1 {
+
+   from{
+
+    width: 0%;
+
+   }
+   to{
+
+    width: 50%;
+
+   }
+ 
+}
+
+/* .span2{
+
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    height:2px;
+    background-color:aqua;
+    animation: slide2 2s infinite;
+} */
+
+@keyframes slide2 {
+
+    from{
+ 
+     width: 0%;
+ 
+    }
+    to{
+ 
+     width: 50%;
+ 
+    }
+  
+ }
+
+
+/* a span:nth-child(2){
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height:2px;
+    width: 50%;
+    background-color:black;
+    animation: slide2 1s infinite;
+} */
+
+
+
+/* a:hover{
+    cursor: pointer;
+    animation: slide 1s;
+} */
+
